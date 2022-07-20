@@ -14,6 +14,8 @@
 		A95629CC28871FAF00B519B8 /* KlossysKloset.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A95629CA28871FAF00B519B8 /* KlossysKloset.xcdatamodeld */; };
 		A95629CE28871FB000B519B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A95629CD28871FB000B519B8 /* Assets.xcassets */; };
 		A95629D128871FB000B519B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A95629CF28871FB000B519B8 /* LaunchScreen.storyboard */; };
+		A95629D92888756F00B519B8 /* Q1TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95629D82888756F00B519B8 /* Q1TableViewController.swift */; };
+		A95629DB288878B500B519B8 /* Q2TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95629DA288878B500B519B8 /* Q2TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A95629CD28871FB000B519B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A95629D028871FB000B519B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A95629D228871FB000B519B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A95629D82888756F00B519B8 /* Q1TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1TableViewController.swift; sourceTree = "<group>"; };
+		A95629DA288878B500B519B8 /* Q2TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q2TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				A95629C328871FAF00B519B8 /* SceneDelegate.swift */,
 				A95629C528871FAF00B519B8 /* ViewController.swift */,
 				A95629C728871FAF00B519B8 /* Main.storyboard */,
+				A95629DA288878B500B519B8 /* Q2TableViewController.swift */,
+				A95629D82888756F00B519B8 /* Q1TableViewController.swift */,
 				A95629CD28871FB000B519B8 /* Assets.xcassets */,
 				A95629CF28871FB000B519B8 /* LaunchScreen.storyboard */,
 				A95629D228871FB000B519B8 /* Info.plist */,
@@ -144,6 +150,8 @@
 				A95629CC28871FAF00B519B8 /* KlossysKloset.xcdatamodeld in Sources */,
 				A95629C628871FAF00B519B8 /* ViewController.swift in Sources */,
 				A95629C228871FAF00B519B8 /* AppDelegate.swift in Sources */,
+				A95629D92888756F00B519B8 /* Q1TableViewController.swift in Sources */,
+				A95629DB288878B500B519B8 /* Q2TableViewController.swift in Sources */,
 				A95629C428871FAF00B519B8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
