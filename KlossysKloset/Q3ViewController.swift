@@ -9,11 +9,75 @@ import UIKit
 
 class Q3ViewController: UIViewController {
 
+    var cheapVintage = 0
+    var cheapCasual = 0
+    var cheapFancy = 0
+    
+    var midVintage = 0
+    var midCasual = 0
+    var midFancy = 0
+    
+    var highVintage = 0
+    var highCasual = 0
+    var highFancy = 0
+    var highTrendy = 0
+    
+    var priceid = 0
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func ansQ3(_ sender: UIButton) {
+        if sender.titleLabel!.text == "1"{
+            if priceid == 0{
+                cheapVintage += 1
+            }
+            else if priceid == 1{
+                midVintage += 1
+            }
+            else{
+                highVintage += 1
+            }
+        }
+        else if sender.titleLabel!.text == "2"{
+            if priceid == 0{
+                cheapFancy += 1
+            }
+            else if priceid == 1{
+                midFancy += 1
+            }
+            else{
+                highFancy += 1
+            }
+        }
+        else if sender.titleLabel!.text == "3"{
+            if priceid == 0{
+                cheapCasual += 1
+            }
+            else if priceid == 1{
+                midCasual += 1
+            }
+            else{
+                highCasual += 1
+            }
+        }
+        else{
+            if priceid == 0{
+                cheapCasual += 1
+            }
+            else if priceid == 1{
+                midCasual += 1
+            }
+            else{
+                highCasual += 1
+            }
+        }
+    }
+    
     
 
     /*
