@@ -20,6 +20,7 @@
 		A95629DF2889A2DC00B519B8 /* Q4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95629DE2889A2DC00B519B8 /* Q4ViewController.swift */; };
 		A95629E12889A2F800B519B8 /* Q5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95629E02889A2F800B519B8 /* Q5ViewController.swift */; };
 		A95629E32889A30900B519B8 /* Q6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95629E22889A30900B519B8 /* Q6ViewController.swift */; };
+		A95629E52889DFEF00B519B8 /* resultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95629E42889DFEF00B519B8 /* resultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		A95629DE2889A2DC00B519B8 /* Q4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q4ViewController.swift; sourceTree = "<group>"; };
 		A95629E02889A2F800B519B8 /* Q5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q5ViewController.swift; sourceTree = "<group>"; };
 		A95629E22889A30900B519B8 /* Q6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q6ViewController.swift; sourceTree = "<group>"; };
+		A95629E42889DFEF00B519B8 /* resultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				A95629C328871FAF00B519B8 /* SceneDelegate.swift */,
 				A95629C528871FAF00B519B8 /* ViewController.swift */,
 				A95629C728871FAF00B519B8 /* Main.storyboard */,
+				A95629E42889DFEF00B519B8 /* resultViewController.swift */,
 				A95629E22889A30900B519B8 /* Q6ViewController.swift */,
 				A95629E02889A2F800B519B8 /* Q5ViewController.swift */,
 				A95629DE2889A2DC00B519B8 /* Q4ViewController.swift */,
@@ -167,6 +170,7 @@
 				A95629DB288878B500B519B8 /* Q2TableViewController.swift in Sources */,
 				A95629DF2889A2DC00B519B8 /* Q4ViewController.swift in Sources */,
 				A95629DD28899DF200B519B8 /* Q3ViewController.swift in Sources */,
+				A95629E52889DFEF00B519B8 /* resultViewController.swift in Sources */,
 				A95629C428871FAF00B519B8 /* SceneDelegate.swift in Sources */,
 				A95629E32889A30900B519B8 /* Q6ViewController.swift in Sources */,
 			);

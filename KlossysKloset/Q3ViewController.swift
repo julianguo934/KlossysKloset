@@ -24,6 +24,8 @@ class Q3ViewController: UIViewController {
     
     var priceid = 0
     
+    var cheapTrendy = 0
+    var midTrendy = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,14 +69,33 @@ class Q3ViewController: UIViewController {
         }
         else{
             if priceid == 0{
-                cheapCasual += 1
+                cheapTrendy += 1
             }
             else if priceid == 1{
-                midCasual += 1
+                midTrendy += 1
             }
             else{
-                highCasual += 1
+                highTrendy += 1
             }
+        }
+        
+        performSegue(withIdentifier: "goToNext", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let next = segue.destination as? Q4ViewController{
+            next.cheapFancy = cheapFancy
+            next.cheapCasual = cheapCasual
+            next.cheapVintage = cheapVintage
+            next.midVintage = midVintage
+            next.midCasual = midCasual
+            next.midFancy = midFancy
+            next.highCasual = highCasual
+            next.highFancy = highFancy
+            next.highVintage = highVintage
+            next.cheapTrendy = cheapTrendy
+            next.midTrendy = midTrendy
         }
     }
     

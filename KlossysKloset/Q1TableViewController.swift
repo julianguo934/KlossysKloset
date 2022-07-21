@@ -51,7 +51,7 @@ class Q1TableViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let next = segue.destination as? Q2TableViewController{
+        if let next = segue.destination as? Q3ViewController{
             next.priceid = priceid
         }
     }
