@@ -70,6 +70,7 @@ class resultViewController: UIViewController {
             else if cheapTrendy == cheapVintage{
                 labeltext = "H&M, Pacsun, Cotton:On, Forever 21 (large size inclusive)"
             }
+            resultLable.text = labeltext
         }
         else if priceid == 1{ //still needs trendy brands
             if midVintage > midCasual && midVintage > midFancy{
@@ -90,6 +91,7 @@ class resultViewController: UIViewController {
             else if midCasual == midFancy{
                 labeltext = "Levi's, Abercrombie & Fitch, Lululemon, & other stories, Express"
             }
+            resultLable.text = labeltext
         }
         else{
             if highVintage > highCasual && highVintage > highFancy && highVintage > highTrendy{
@@ -125,7 +127,8 @@ class resultViewController: UIViewController {
             }
             resultLable.text = labeltext
         }
-        performSegue(withIdentifier: "goToNext", sender: self)
+        
+        //performSegue(withIdentifier: "goToNext", sender: self)
         
     }
     
