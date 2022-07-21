@@ -27,7 +27,7 @@ class resultViewController: UIViewController {
     var cheapTrendy = 0
     var midTrendy = 0
     
-    var answer = ""
+    var labeltext = ""
     
 
     @IBOutlet weak var resultLable: UILabel!
@@ -40,97 +40,98 @@ class resultViewController: UIViewController {
     @IBAction func resButton(_ sender: UIButton) {
         if priceid == 0{
             if cheapVintage > cheapCasual && cheapVintage > cheapFancy && cheapVintage > cheapTrendy{
-                resultLable.text = "H&M, Pacsun"
+                labeltext = "H&M, Pacsun"
             }
             else if cheapCasual > cheapVintage && cheapCasual > cheapFancy && cheapCasual > cheapTrendy{
-                resultLable.text = "Uniqlo, Bluenotes, Garage"
+                labeltext = "Uniqlo, Bluenotes, Garage"
             }
             else if cheapFancy > cheapCasual && cheapFancy > cheapVintage && cheapFancy > cheapTrendy{
-                resultLable.text = "Zara"
+                labeltext = "Zara"
             }
             else if cheapTrendy > cheapFancy && cheapTrendy > cheapCasual && cheapTrendy > cheapVintage{
-                resultLable.text = "Cotton:On, Forever 21 (large size inclusive)"
+                labeltext = "Cotton:On, Forever 21 (large size inclusive)"
             }
             
             else if cheapVintage == cheapCasual{
-                resultLable.text = "H&M, Pacsun, Uniqlo, Bluenotes, Garage"
+                labeltext = "H&M, Pacsun, Uniqlo, Bluenotes, Garage"
             }
             else if cheapVintage == cheapFancy{
-                resultLable.text = "H&M, Pacsun, Zara"
+                labeltext = "H&M, Pacsun, Zara"
             }
             else if cheapCasual == cheapFancy{
-                resultLable.text = "Uniqlo, Bluenotes, Garage, Zara"
+                labeltext = "Uniqlo, Bluenotes, Garage, Zara"
             }
             else if cheapTrendy == cheapFancy{
-                resultLable.text = "Zara, Cotton:On, Forever 21 (large size inclusive)"
+                labeltext = "Zara, Cotton:On, Forever 21 (large size inclusive)"
             }
             else if cheapTrendy == cheapCasual{
-                resultLable.text = "Uniqlo, Bluenotes, Garage, Cotton:On, Forever 21 (large size inclusive)"
+                labeltext = "Uniqlo, Bluenotes, Garage, Cotton:On, Forever 21 (large size inclusive)"
             }
             else if cheapTrendy == cheapVintage{
-                resultLable.text = "H&M, Pacsun, Cotton:On, Forever 21 (large size inclusive)"
+                labeltext = "H&M, Pacsun, Cotton:On, Forever 21 (large size inclusive)"
             }
         }
         else if priceid == 1{ //still needs trendy brands
             if midVintage > midCasual && midVintage > midFancy{
-                resultLable.text = "Urban Outfitters, Brandy Melville (small size inclusive)"
+                labeltext = "Urban Outfitters, Brandy Melville (small size inclusive)"
             }
             else if midCasual > midVintage && midCasual > midFancy{
-                resultLable.text = "Levi's, Abercrombie & Fitch, Lululemon"
+                labeltext = "Levi's, Abercrombie & Fitch, Lululemon"
             }
             else if midFancy > midCasual && midFancy > midVintage{
-                resultLable.text = "& other stories, Express"
+                labeltext = "& other stories, Express"
             }
             else if midVintage == midCasual{
-                resultLable.text = "Urban Outfitters, Brandy Melville (small size inclusive), Levi's, Abercrombie & Fitch, Lululemon"
+                labeltext = "Urban Outfitters, Brandy Melville (small size inclusive), Levi's, Abercrombie & Fitch, Lululemon"
             }
             else if midVintage == midFancy{
-                resultLable.text = "Urban Outfitters, Brandy Melville (small size inclusive), & other stories, Express"
+                labeltext = "Urban Outfitters, Brandy Melville (small size inclusive), & other stories, Express"
             }
             else if midCasual == midFancy{
-                resultLable.text = "Levi's, Abercrombie & Fitch, Lululemon, & other stories, Express"
+                labeltext = "Levi's, Abercrombie & Fitch, Lululemon, & other stories, Express"
             }
         }
         else{
             if highVintage > highCasual && highVintage > highFancy && highVintage > highTrendy{
-                resultLable.text = "The Vintage Bohemian, Proenza Schouler White Label"
+                labeltext = "The Vintage Bohemian, Proenza Schouler White Label"
             }
             else if highCasual > highVintage && highCasual > highFancy && highCasual > highTrendy{
-                resultLable.text = "Raey, Agolde"
+                labeltext = "Raey, Agolde"
             }
             else if highFancy > highCasual && highFancy > highVintage && highFancy > highTrendy{
-                resultLable.text = "Banana Republic, Reformation, The Frankie Shop"
+                labeltext = "Banana Republic, Reformation, The Frankie Shop"
             }
             else if highTrendy > highFancy && highTrendy > highCasual && highTrendy > highVintage{
-                resultLable.text = "Nordstrom, Anthropologie"
+                labeltext = "Nordstrom, Anthropologie"
             }
             
             else if highVintage == highCasual{
-                resultLable.text = "Raey, Agolde, The Vintage Bohemian, Proenza Schouler White Label"
+                labeltext = "Raey, Agolde, The Vintage Bohemian, Proenza Schouler White Label"
             }
             else if highVintage == highFancy{
-                resultLable.text = "The Vintage Bohemian, Proenza Schouler White Label, Banana Republic, Reformation, The Frankie Shop"
+                labeltext = "The Vintage Bohemian, Proenza Schouler White Label, Banana Republic, Reformation, The Frankie Shop"
             }
             else if highCasual == highFancy{
-                resultLable.text = "Banana Republic, Reformation, The Frankie Shop, Raey, Agolde"
+                labeltext = "Banana Republic, Reformation, The Frankie Shop, Raey, Agolde"
             }
             else if highTrendy == highFancy{
-                resultLable.text = "Banana Republic, Reformation, The Frankie Shop, Nordstrom, Anthropologie"
+                labeltext = "Banana Republic, Reformation, The Frankie Shop, Nordstrom, Anthropologie"
             }
             else if highTrendy == highCasual{
-                resultLable.text = "Nordstrom, Anthropologie, Raey, Agolde"
+                labeltext = "Nordstrom, Anthropologie, Raey, Agolde"
             }
             else if highTrendy == highVintage{
-                resultLable.text = "Nordstrom, Anthropologie, The Vintage Bohemian, Proenza Schouler White Label"
+                labeltext = "Nordstrom, Anthropologie, The Vintage Bohemian, Proenza Schouler White Label"
             }
+            resultLable.text = labeltext
         }
         performSegue(withIdentifier: "goToNext", sender: self)
-        answer = resultLable.text
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let next = segue.destination as? ViewController{
-            next.answer = answer
+            next.labeltext = labeltext
         }
     }
     

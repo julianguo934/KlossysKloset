@@ -531,7 +531,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="homekit" catalog="system" title="Back to home page"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="hzF-Iz-a09"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToNext" modalPresentationStyle="fullScreen" id="hzF-Iz-a09"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRt-Iw-LDb">
@@ -565,7 +565,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2uH-QW-a1A"/>
+        <segue reference="7hZ-gg-XhI"/>
         <segue reference="qAn-AS-Ykf"/>
         <segue reference="TgT-N3-nHw"/>
         <segue reference="uRt-u2-ZQG"/>

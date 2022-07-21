@@ -7,16 +7,14 @@
 
 import UIKit
 
-var answer = ""
-
 class ViewController: UIViewController {
-
+    var labeltext = ""
 
     @IBOutlet weak var ansLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        ansLabel.text = answer
+        ansLabel.text = labeltext
         
     }
 
