@@ -27,6 +27,8 @@ class resultViewController: UIViewController {
     var cheapTrendy = 0
     var midTrendy = 0
     
+    var answer = ""
+    
 
     @IBOutlet weak var resultLable: UILabel!
     override func viewDidLoad() {
@@ -122,10 +124,15 @@ class resultViewController: UIViewController {
                 resultLable.text = "Nordstrom, Anthropologie, The Vintage Bohemian, Proenza Schouler White Label"
             }
         }
-        
+        performSegue(withIdentifier: "goToNext", sender: self)
+        answer = resultLable.text
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let next = segue.destination as? ViewController{
+            next.answer = answer
+        }
+    }
     
 
     /*

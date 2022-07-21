@@ -85,7 +85,7 @@ class Q5ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let next = segue.destination as? Q7ViewController{
+        if let next = segue.destination as? resultViewController{
             next.cheapFancy = cheapFancy
             next.cheapCasual = cheapCasual
             next.cheapVintage = cheapVintage
